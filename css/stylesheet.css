@@ -1,0 +1,292 @@
+.jumbotron
+{
+    position: relative;
+    background: #000 url("../img/IMG_7678.jpg") center center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 0;
+}
+
+
+.nav-js
+{
+    margin: 0 auto;
+}
+.text-muted
+{
+    text-align: center;
+}
+
+.carousel
+{
+    margin-top: 0;
+}
+
+.carousel-example-generic
+{
+    width: 100%;
+}
+
+#heading
+{
+    position: relative;
+    background: #000 url("../img/IMG_7682.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 100px; !important;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 0;
+}
+
+#heading2
+{
+    position: relative;
+    background: #000 url("../img/IMG_7693.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 100px; !important;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 0;
+}
+
+
+#heading3
+{
+    position: relative;
+    background: #000 url("../img/IMG_7788.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 100px; !important;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 0;
+}
+
+
+h2
+{
+    padding-top: 100px;
+    color: white; !important;
+}
+
+h1, h6
+{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h1
+{
+    padding-top: 75px;
+}
+
+
+#byLawsDisclaimer
+{
+    text-align: center;
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 20px; !important;
+}
+.style
+{
+    color: white;
+}
+
+body
+{
+    width: 100%;
+}
+
+h3
+{
+    text-align: center;
+}
+.col
+{
+    border: 1px solid #d2d2d2;
+}
+
+.class-padding
+{
+    margin:10px;
+    padding: 10px;
+
+}
+
+#error
+ {
+    margin-top: 10px;
+    margin-bottom: 0;
+ }
+
+.paragraphCenter
+{
+    text-align: left;
+}
+
+#iso
+{
+    text-shadow: none;
+}
+
+.gallery
+{
+    padding-bottom: 20px;
+}
+
+
+.img-thumbnail
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.row
+{
+    text-align: center;
+}
+
+ul
+{
+    text-align: left;
+    word-wrap:break-word;
+}
+
+
+p
+{
+    text-align: left;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #000000;
+}
+
+table
+{
+    width: 100%;
+}
+
+tr, td, th
+{
+ text-align: left;
+}
+
+.directory
+{
+    margin: 0 auto;
+}
+
+.Flexible-container
+{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,
+.Flexible-container object,
+.Flexible-container embed
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe
+{
+    border: 0;
+}
+
+.heads, h4
+{
+    text-align: center;
+}
+
+.navbar-form
+{
+    margin-right: 100px;
+}
+
+.navbar-brand
+{
+    padding-left: -500px;
+}
+.list
+{
+    margin-bottom: 20px;
+}
+
+#media1
+{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+#media3
+{
+    height: 100px;
+    width: 100px;
+    margin-top: 80px;
+}
+#media2
+{
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+
+.twitter-follow-button, .ig-b-
+{
+    margin-top: 10px;
+}
+
+.ig-b-
+{
+   height: 40px;
+}
+
+#media-bottom
+{
+    padding-top: 50px;
+}
+
+.address
+{
+    text-align: center;
+}
+
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }
