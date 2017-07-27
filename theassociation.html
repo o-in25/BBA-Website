@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><!--HTML START-->
+    <head> <!--HEAD START-->
+
+        <meta name="description" content="The offical website of the Billow Beach Association - The private beach association in Saybrook, OH"/>
+        <meta name="keyword" content="billow, beach, association, lou's, ashtabula, saybrook"/>
+        <meta name="robots" content="index, follow"/>
+        <link rel="icon" href="img/Billow.jpg"/>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css"/>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+        <script language="JavaScript" rel="text/javascript" src="js/logic.js"></script>
+        <title> The Association - The Billow Beach Association </title>
+    </head><!--HEAD END-->
+
+    <body><!--BODY START-->
+        <noscript>
+          Please enable JavaScript to view this page's content
+        </noscript>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">The Billow Beach Association</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="active"><a href="#">The Association</a></li>
+                        <li><a href="photogallery.html">Photo Gallery </a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div id="container"> <!--CONTAINER START-->
+                <div class="jumbotron"><!--JUMBOTRON START-->
+                        <h1> Billow Beach </h1>
+                        <h6> THE PRIVATE BEACH ASSOCIATION IN SAYBROOK, OH</h6>
+                </div><!--JUMBOTRON END-->
+        </div>
+                <div class="container">
+                            <hr/>
+                        <div class="alert alert-danger" id="byLawsDisclaimer" role="alert" aria-hidden="true">
+                            <span class="glyphicon glyphicon-exclamation-sign"></span> <b> Warning! </b> These links are password protected. Only current residents are permitted to access this information. Unauthroized use of these documents and its contents are prohibited by law. See the administrator for any questions.
+                        </div>
+                    <div class="container"><!-- IMAGE THUMBNAILS START-->
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="img/IMG_7799.jpg" alt="...">
+                                    <div class="caption">
+                                        <h3> Member Directory  </h3>
+                                        <p>  Need to reference a phone number, address, or email? View the Billow Beach member directory for essential contact information.  </p>
+                                        <p><a href="#dialogModal" data-toggle="modal" class="btn btn-primary" role="button" onclick="throwDirectoryToken();">Go</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="img/IMG_7711.jpg" alt="...">
+                                    <div class="caption">
+                                        <h3> Meeting Summary </h3>
+                                        <p> See a summary of the Billow beach annual meeting, including minutes, reports, as well as current and old legislation. </p>
+                                        <p><a href="#dialogModal" data-toggle="modal" class="btn btn-primary" role="button" onclick="throwMeetingSummaryToken();">Go</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="img/IMG_6790.jpg" alt="...">
+                                    <div class="caption">
+                                        <h3>Constitution & By-Laws</h3>
+                                        <p> Reference the By-Laws and the Constitution for Billow Beach, including the agreement that binds you to the association. </p>
+                                        <p><a href="#dialogModal" data-toggle="modal" class="btn btn-primary" role="button" onclick="throwByLawsToken();">Go</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--IMAGE THUMBNAILS END-->
+
+                        <div class="modal fade" id="dialogModal" role="dialog"><!--BYLAWS MODAL START-->
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">Password Protected</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="passwordTXT">Please enter a password to view this page's content </label>
+                                                <input type="password" class="form-control" id="passwordTXT" placeholder="Password">
+                                                <div id="spacingForError">
+                                                <div class="alert alert-danger alert-dismissible" id="error" role="alert"><!--ERROR START-->
+                                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                                    <span class="sr-only">Error:</span>
+                                                    Erroneous password
+                                                    <button type="button" id="errorbutton" class="close" onclick="hideDialog();">&times;</button>
+                                                </div><!--ERROR END-->
+                                                </div>
+                                            </div>
+                                            <script> hideDialog(); </script>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary" id="accept" onclick="dialogBehavior();">Continue</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="hideDialog(); resetTokens();">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--BYLAWS MODAL END -->
+                        <hr/>
+                       </div>
+                </div>
+            <footer class="footer"><!--FOOTER START-->
+              <div class="container">
+                <p class="text-muted"> &copy; <script> writeDate(); </script>, The Billow Beach Association. All rights reserved.
+                </p>
+              </div>
+            </footer><!--FOOTER END-->
+    </body><!--BODY END-->
+
+</html><!--HTML END-->
